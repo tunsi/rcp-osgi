@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="me.tunsi.cxf.api.HelloWorldService">
+   <implementation class="me.tunsi.cxf.server.impl.HelloWorldServiceImpl"/>
+   <property name="service.exported.interfaces" type="String" value="*"/>
+   <property name="service.exported.intents" type="String" value="SOAP"/>
+   <property name="service.exported.configs" type="String" value="org.apache.cxf.ws"/>
+   <property name="org.apache.cxf.ws.address" type="String" value="http://localhost:9000/hello_world"/>
+   <property name="org.apache.cxf.ws.in.interceptors" type="String" value="me.tunsi.cxf.server.interceptor.RequestInterceptor" />
+   <service>
+       <provide interface="me.tunsi.cxf.api.HelloWorldService" />
+   </service>
+</scr:component>
+

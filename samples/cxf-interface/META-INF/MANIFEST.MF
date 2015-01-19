@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Cxf-interface
+Bundle-SymbolicName: cxf.interface
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: tunsi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: me.tunsi.cxf.api

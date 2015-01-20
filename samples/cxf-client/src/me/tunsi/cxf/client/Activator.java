@@ -39,6 +39,7 @@ public class Activator implements BundleActivator {
 			}
 		};
 		tracker.open();
+		
 	}
 
 	/*

@@ -5,7 +5,7 @@
    <property name="service.exported.intents" type="String" value="SOAP"/>
    <property name="service.exported.configs" type="String" value="org.apache.cxf.ws"/>
    <property name="org.apache.cxf.ws.address" type="String" value="http://localhost:9000/hello_world"/>
-   <property name="org.apache.cxf.ws.in.interceptors" type="String" value="me.tunsi.cxf.server.interceptor.RequestInterceptor" />
+   <property name="org.apache.cxf.ws.in.interceptors" type="String" value="me.tunsi.cxf.server.interceptor.RequestInterceptor,me.tunsi.cxf.server.interceptor.AuthInterceptor" />
    <service>
        <provide interface="me.tunsi.cxf.api.HelloWorldService" />
    </service>

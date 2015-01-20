@@ -22,5 +22,6 @@
     </property>
     <property name="endpoint.id">http://localhost:9000/hello_world</property>
     <property name="service.imported.configs">org.apache.cxf.ws</property>
+    <property name="org.apache.cxf.ws.out.interceptors" type="String" value="me.tunsi.cxf.client.interceptor.AddSoapHeader" />
   </endpoint-description>
 </endpoint-descriptions>

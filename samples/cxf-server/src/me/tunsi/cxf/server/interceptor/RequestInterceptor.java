@@ -21,6 +21,7 @@ public class RequestInterceptor extends AbstractPhaseInterceptor<Message> {
 		System.out.println("handler");
 
 		HttpServletRequest request = (HttpServletRequest) arg0.get(AbstractHTTPDestination.HTTP_REQUEST);
+		
 		String ip = request.getRemoteAddr();
 		System.out.println(ip);
 	}

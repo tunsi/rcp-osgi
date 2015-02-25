@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>felix-tutorial</groupId>
+	<artifactId>example-1</artifactId>
+	<version>1.0</version>
+	<packaging>bundle</packaging>
+	<name>Apache Felix Tutorial Example 1</name>
+	<description>Apache Felix Tutorial Example 1</description>
+
+	<!-- Build Configuration -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<manifestLocation>META-INF</manifestLocation>
+					<instructions>
+						<Bundle-SymbolicName>${pom.groupId}.${pom.artifactId}</Bundle-SymbolicName>
+						<Bundle-Name>Service listener example</Bundle-Name>
+						<Bundle-Description>A bundle that displays messages at startup and when service events occur</Bundle-Description>
+						<Bundle-Vendor>Apache Felix</Bundle-Vendor>
+						<Bundle-Version>1.0.0</Bundle-Version>
+						<Bundle-Activator>tutorial.example1.Activator</Bundle-Activator>
+						<Import-Package>org.osgi.framework,tutorial.example2.service</Import-Package>
+						<Bundle-RequiredExecutionEnvironment>JavaSE-1.8</Bundle-RequiredExecutionEnvironment>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+					<compilerId>javac</compilerId>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+					<compilerVersion>1.8</compilerVersion>
+					<verbose>true</verbose>
+					<optimize>true</optimize>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- Dependecies Management -->
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.framework</artifactId>
+			<version>2.0.4</version>
+		</dependency>
+	</dependencies>
+
+</project>

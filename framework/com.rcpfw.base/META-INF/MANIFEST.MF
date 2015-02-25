@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Base
+Bundle-SymbolicName: com.rcpfw.base;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: KongXiangxi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.rcpfw.base.models
+Bundle-ActivationPolicy: lazy

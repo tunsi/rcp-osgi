@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:basic_1="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="__YySwLw-EeSCIqTfVTEKsQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cRHI8Lw_EeSCIqTfVTEKsQ" featurename="children" parentElementId="com.rcpfw.application.partstack.indexstack">
+    <elements xsi:type="basic:Part" xmi:id="_nAOXALw_EeSCIqTfVTEKsQ" elementId="com.rcpfw.client.module.demo.part.demo" contributionURI="bundleclass://com.rcpfw.client.module.demo/com.rcpfw.client.module.demo.parts.DemoPart" label="Demo &#x9996;&#x9875;"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_wW5R0LxHEeSCIqTfVTEKsQ" featurename="descriptors" parentElementId="com.rcpfw.e4.application">
+    <elements xsi:type="basic_1:PartDescriptor" xmi:id="_PWaeALxIEeSCIqTfVTEKsQ" elementId="com.rcpfw.client.module.demo.partdescriptor.crud" label="&#x589e;&#x5220;&#x6539;&#x67e5;" closeable="true" contributionURI="bundleclass://com.rcpfw.client.module.demo/com.rcpfw.client.module.demo.parts.CrudPart"/>
+  </fragments>
+</fragment:ModelFragments>

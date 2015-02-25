@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<mi label="Demo">
+		<mi label="增删改查" part-id="com.rcpfw.client.module.demo.partdescriptor.crud" />
+	</mi>
+</root>

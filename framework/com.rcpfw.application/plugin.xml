@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension-point id="menu" name="Menu" schema="schema/menu.exsd"/>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="RCP"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://com.rcpfw.application/com.rcpfw.application.LifeCycleHandler">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.rcpfw.application/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="RCP">
+         </property>
+         <property
+               name="applicationXMI"
+               value="platform:/plugin/com.rcpfw.application/Application.e4xmi">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

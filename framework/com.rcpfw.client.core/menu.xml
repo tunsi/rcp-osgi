@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<mi label="系统管理">
+		<mi label="用户管理" part-id="com.rcpfw.client.core.partdescriptor.user" />
+		<mi label="部门管理" part-id="" />
+		<mi label="角色管理" part-id="" />
+		<mi label="权限管理" part-id="" />
+	</mi>
+	<mi label="首选项" part-id="" />
+</root>

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: lib.jetty
+Bundle-SymbolicName: com.rcpfw.lib.jetty
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .,
+ target/dependency/jetty-all-9.2.9.v20150224.jar
+Built-By: Xiangxi
+Embed-Dependency: *;scope=compile|runtime;inline=false
+Embed-StripGroup: true
+Build-Jdk: 1.8.0_25
+Created-By: Apache Maven Bundle Plugin
+Embedded-Artifacts: target/dependency/jetty-all-9.2.9.v20150224.jar;g="org.eclipse.jetty.aggregate";a="jetty-all";v="9.2.9.v20150224"
+Embed-Directory: target/dependency
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Tool: Bnd-2.3.0.201405100607
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Bnd-LastModified: 1424880210551

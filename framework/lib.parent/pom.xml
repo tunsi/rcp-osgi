@@ -8,16 +8,6 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<logback.version>1.1.2</logback.version>
-		<junit.version>4.12</junit.version>
-		<spring.version>4.1.3.RELEASE</spring.version>
-		<aspectj.version>1.7.2</aspectj.version>
-		<slf4j.version>1.7.6</slf4j.version>
-		<commons-dbcp.version>1.2.2</commons-dbcp.version>
-		<hibernate.version>4.3.8.Final</hibernate.version>
-		<paho-mqtt.version>1.0.1</paho-mqtt.version>
-		<guava.version>18.0</guava.version>
-		<dom4j.version>1.6.1</dom4j.version>
 	</properties>
 
 	<dependencyManagement>
@@ -25,38 +15,43 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<version>${guava.version}</version>
+				<version>18.0</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>jcl-over-slf4j</artifactId>
-				<version>${slf4j.version}</version>
+				<version>1.7.6</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
-				<version>${slf4j.version}</version>
+				<version>1.7.6</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-log4j12</artifactId>
-				<version>${slf4j.version}</version>
+				<version>1.7.6</version>
 			</dependency>
 			<dependency>
 				<groupId>ch.qos.logback</groupId>
 				<artifactId>logback-classic</artifactId>
-				<version>${logback.version}</version>
+				<version>1.1.2</version>
 			</dependency>
 			<dependency>
 				<groupId>dom4j</groupId>
 				<artifactId>dom4j</artifactId>
-				<version>${dom4j.version}</version>
+				<version>1.6.1</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>${junit.version}</version>
+				<version>4.12</version>
 				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty.aggregate</groupId>
+				<artifactId>jetty-all</artifactId>
+				<version>9.2.9.v20150224</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -98,5 +93,6 @@
 	</build>
 	<modules>
 		<module>lib.util</module>
+		<module>lib.jetty</module>
 	</modules>
 </project>

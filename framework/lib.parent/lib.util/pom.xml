@@ -52,7 +52,7 @@
 						<Bundle-SymbolicName>${pom.groupId}.${pom.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${pom.version}</Bundle-Version>
 						<Import-Package></Import-Package>
-						<Export-Package>*</Export-Package>
+						<Export-Package>!*.html,!*.css,!*.js,*</Export-Package>
 						<Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
 						<Embed-Directory>target/dependency</Embed-Directory>
 						<Embed-StripGroup>true</Embed-StripGroup>

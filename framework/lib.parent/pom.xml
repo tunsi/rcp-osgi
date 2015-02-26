@@ -6,6 +6,7 @@
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
+	<!-- org.apache.felix:maven-bundle-plugin:bundleall -->
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -53,8 +54,44 @@
 				<artifactId>jetty-all</artifactId>
 				<version>9.2.9.v20150224</version>
 			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>3.1.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<repositories>
+		<repository>
+			<id>repo1</id>
+			<url>http://repo1.maven.apache.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>codehaus</id>
+			<url>http://repository.codehaus.org/</url>
+		</repository>
+		<repository>
+			<id>jboss</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+		</repository>
+		<repository>
+			<id>springframework</id>
+			<url>http://maven.springframework.org/release/</url>
+		</repository>
+		<repository>
+			<id>java1</id>
+			<url>http://download.java.net/maven/1/</url>
+		</repository>
+		<repository>
+			<id>java2</id>
+			<url>http://download.java.net/maven/2/</url>
+		</repository>
+		<repository>
+			<id>nuxeo</id>
+			<url>http://maven.nuxeo.org/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<resources>

@@ -2,7 +2,9 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-5j80LtREeSJnfRNDloZ7A" elementId="com.rcpfw.e4.application" bindingContexts="_-5j82btREeSJnfRNDloZ7A">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_-5j80btREeSJnfRNDloZ7A" elementId="com.rcpfw.application.trimmedwindow" selectedElement="_-5j88rtREeSJnfRNDloZ7A" label="com.rcpfw.application" width="800" height="600">
     <children xsi:type="basic:PartSashContainer" xmi:id="_-5j88rtREeSJnfRNDloZ7A" elementId="com.rcpfw.application.part.sash.container" horizontal="true">
-      <children xsi:type="basic:Part" xmi:id="_-5j89LtREeSJnfRNDloZ7A" elementId="com.rcpfw.application.part.navigator" containerData="200" contributionURI="bundleclass://com.rcpfw.application/com.rcpfw.application.parts.NavigatorPart" label="%part-navigator"/>
+      <children xsi:type="basic:PartStack" xmi:id="_gh5q0L0SEeS-ILDp1LibGA" elementId="com.rcpfw.application.partstack.left" containerData="200">
+        <children xsi:type="basic:Part" xmi:id="_-5j89LtREeSJnfRNDloZ7A" elementId="com.rcpfw.application.part.navigator" containerData="" contributionURI="bundleclass://com.rcpfw.application/com.rcpfw.application.parts.NavigatorPart" label="%part-navigator"/>
+      </children>
       <children xsi:type="basic:PartStack" xmi:id="_TkORMLtWEeSifuvIzgyEMw" elementId="com.rcpfw.application.partstack.indexstack" containerData="600">
         <children xsi:type="basic:Part" xmi:id="_WBSJgLtWEeSifuvIzgyEMw" elementId="com.rcpfw.application.part.welcome" contributionURI="bundleclass://com.rcpfw.application/com.rcpfw.application.parts.WelcomePart" label="%part-welcome" tooltip="Welcome"/>
       </children>
